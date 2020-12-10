@@ -10,16 +10,20 @@ body{
 .heading{
     margin-top: 5%;
 }
+.portion-1{
+    width: 55%;
+}
+.portion-2{
+    width: 45%;
+}
 .heading h1{
-    width: 90%;
-    height: 90%;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: white;
     line-height:3.5rem;
 }
 .para{
-    margin-top: 3%;
+    margin-top: 5%;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
