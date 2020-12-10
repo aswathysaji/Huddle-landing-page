@@ -37,8 +37,9 @@ body{
 }
 button{
     height: 50px;
-    width: 65%;
-    background-color: white;width:30%;color: hsl(257, 40%, 49%);
+    width: 40%;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
     border: solid 1px hsl(223, 100%, 88%);
     box-shadow: 0 0 5px 3px rgb(46, 12, 133);
     border-radius: 4rem;
