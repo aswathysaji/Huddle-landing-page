@@ -7,6 +7,15 @@ body{
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Poppins', sans-serif;*/
 }
+.container-fluid{
+    padding-left: 0;
+}
+.navbar{
+    margin: 3% 3% 3% 0;
+}
+.navbar img{
+    width: 70%;
+}
 .heading{
     margin-top: 5%;
 }
@@ -15,6 +24,7 @@ body{
 }
 .portion-2{
     width: 45%;
+    margin-left: 5%;
 }
 .heading h1{
     font-family: 'Poppins', sans-serif;
@@ -23,10 +33,12 @@ body{
     line-height:3.5rem;
 }
 .para{
-    margin-top: 5%;
+    margin-top: 2%;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    font-weight: 400;
+    opacity: 0.8;
 }
 .image{
     width: 100%;
@@ -41,12 +53,13 @@ button{
     background-color: white;
     color: hsl(257, 40%, 49%);
     border: solid 1px hsl(223, 100%, 88%);
-    box-shadow: 0 0 5px 3px rgb(46, 12, 133);
     border-radius: 4rem;
 }
 button:hover{
-    background-color: hsl(257, 40%, 49%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: hsl(300, 69%, 71%);
     color: white;
+    border: none;
 }
 .socialmedia{
     display: flex;
@@ -62,8 +75,18 @@ button:hover{
     border-radius: 50%;     
     transition: background-color 0.5s, color 0.5s;
 }
+.links i{
+    font-size: 13px;color: white;
+}
+.links:hover{
+    border: solid 1px  hsl(300, 69%, 71%);
+}
+.links i:hover{
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+}
 footer{
-    margin-top: 5%;
+    margin: 3%;
 }
 .attribution { 
     font-size: 15px; 
@@ -72,4 +95,77 @@ footer{
 .attribution a { 
     color:white;
     text-decoration: none;
+ }
+
+ @media(max-width:768px){
+    .navbar img{
+        width: 70%;
+    }
+    .portion-1{
+        width: 100%;
+    }
+    .portion-2{
+        width: 100%;
+        margin-left: 0;
+        padding: 8%;
+    }
+    .heading h1{
+        line-height:2.5rem;
+        text-align: center;
+    }
+    .links{
+        padding-top: 0;
+    }
+    .para{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+     .socialmedia{
+        float: initial;
+        margin-top: 5% auto;
+     }
+     button{
+         text-align: center;
+        height: 50px;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+     }
+ }
+
+ @media (max-width:540px){
+     body{
+        background: url(./images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+     }
+    .navbar img{
+        width: 50%;
+    }
+    .portion-1{
+        width: 100%;
+    }
+    .portion-2{
+        width: 100%;
+        margin-left: 0;
+        padding: 8%;
+    }
+    .heading h1{
+        line-height:2.2rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .links{
+        padding-top: 0;
+    }
+    .para{
+        text-align: center;
+        font-size: 1rem;
+    }
+     button{
+         text-align: center;
+        height: 40px;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+     }
  }
